@@ -7,6 +7,7 @@
 
 
 
+
 *{
 
     font-family: 'Open Sans', sans-serif;
@@ -68,6 +69,7 @@
 }
 .menu a{
     text-decoration: none;
+    color: #3C354F;
 }
 .menu img{
     width: 30px;
@@ -83,6 +85,10 @@
     padding: 5px;
     border-radius: 48px;
     cursor: pointer;
+}
+.nav-hover{
+    color: #3C354F;
+    text-decoration: none;
 }
 
 
@@ -138,6 +144,7 @@
 }
 .paragraph{
     text-align: left;
+    
 }
 .primary-btn{
  
