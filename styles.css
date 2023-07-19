@@ -1,0 +1,280 @@
+/* laptop design */
+/* header part */
+body{
+    max-width: 1920px;
+    margin: 0px auto;
+  }
+  .navbar{
+    min-height: 0.02vh;
+    background: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 101px auto;
+  
+  }
+  .n-left{
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+    width: 20%;
+     margin: 0px 30px;
+     font-size: 45px; 
+  }
+  .n-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 25px;
+    width: 80%;
+  
+  }
+  .n-btn{width: 262px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+  text-align: center;
+  padding: 40px;
+  transition: border 1s ease-in-out 0.2s;
+  }
+  .n-btn:hover{
+    border: 5px solid green;
+  }
+  /* banner part */
+  .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+  }
+  .banner-left{
+    list-style: none;
+  }
+  .tittle{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+  color: transparent;
+  
+  }
+  .btn-primary{
+    margin-top: 10px;
+    width: 156px;
+    height: 65px;
+    padding: 21px 40px;
+    border-radius: 48px;
+    background: #FF42A5;
+    color: #FFF;
+    cursor: pointer;
+    transition: background 2s ease-in-out 0.1s;
+   
+    }
+    .btn-primary:hover{
+      background:green;
+    color: pink;}
+  
+  .btn-second{
+    margin-top: 10px;
+    width: 156px;
+    height: 65px;
+    padding: 21px 40px;
+    border-radius: 48px;
+  background: #4EC5F7;
+  color: #FFF;
+  cursor: pointer;
+  transition: background 2s ease-in-out 0.1s;
+  }
+  .btn-second:hover{
+    background: green;
+    color: pink;
+  }
+  /* main part online games */
+  .online-game-part{
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
+    
+  }
+  .card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    text-align: center;
+    box-shadow: 5px blue;
+  }
+  .single-card img{
+    width: 300px;
+    height: 400px;
+    margin-left: 10px;
+  }
+  .image-container{
+    position: relative;
+    display: inline-block;
+  }
+  .play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .play-button i{
+    color: #FFF;
+  }
+  .image-container:hover .play-button{
+    display: block;
+  }
+  /* play instant part */
+  .play-instant{
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .play-i-left{text-align: center;
+  margin-right: 20px;}
+  .play-i-right{}
+  .play-i-right .img-1{position: relative;
+  width: 300px;
+  height: 350px;}
+  .play-i-right .img-2{position:relative;
+    width: 150px;
+    height: 175px;
+    left: -120px;
+    top: -130px;
+  }
+  /* icons part */
+  .icon-part{width: 70%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px; 
+   
+   
+  }
+  .icon{display: flex;
+    cursor: pointer;
+    transition: background 2s ease-in-out 0.1s,
+    border-radius 2s ease-in-out 0.1s,
+    border 2s ease-in-out 0.1s,
+    color 2s ease-in-out 0.1s ;
+  }
+    .icon:hover{
+      border-radius: 15px;
+      border: 2px solid red;
+      background: green;
+      color: white;
+    }
+    /* footer part */
+    footer{
+      background: black;
+      margin: 100px auto;
+      min-width:190px ;
+      min-height: 75vh;
+      text-align: center;
+    }
+    .text,.conditions {width: 100%;
+      margin: 100px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      gap: 10px;
+    }
+    .test-2,.icons{
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      list-style: none;
+      gap: 10px;
+      margin: 0px auto;
+    }
+    .conditions{
+      color: #4EC5F7;
+      list-style: none;
+      gap: 10px;
+    }
+    .finish{
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  /* mobile design */
+   @media screen and (max-width:576px){
+    .navbar ,.n-left,.n-right,.play-instant
+    {
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      margin: 10px auto;
+    }
+    .banner{
+      flex-direction: column-reverse;
+    }
+    .card{
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      margin:0px auto;
+      text-align: center;
+    }
+    .icon-part,.test-2,.icons{
+      grid-template-columns: repeat(3,1fr);
+    }
+    
+    
+  
+  
+  
+  
+   }
+  /* tablet design */
+  @media screen and (min-width:576px) and (max-width:960px){
+    .navbar ,.n-left,.n-right,.banner,.play-instant
+    {
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      margin: 10px auto;
+    }
+    .card{
+      grid-template-columns: repeat(2,1fr);
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      margin:0px auto;
+      text-align: center;
+    }
+    .icon-part,.icons{
+      grid-template-columns: repeat(4,1fr);
+      gap: 10px;
+    }
+    
+  
+  
+  
+  }
+  
