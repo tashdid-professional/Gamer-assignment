@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -55,6 +56,7 @@
      display: flex;
      gap: 30px;
      align-items: center; 
+     font
 }
 .sub-anchor{
     display: flex;
@@ -488,7 +490,13 @@ left: -10%;
 
 }
 
-
+.primary-btn , .secondary-btn{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-top: 30px;
+}
 
 /* for medium or larger device  */
 @media screen and (min-width:576px) and (max-width:990px) {
